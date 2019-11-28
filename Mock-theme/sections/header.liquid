@@ -1,0 +1,43 @@
+
+
+<div class="side-bar">
+    <!-- <label for="sidebartoggler" class='toggler'>☴</label> -->
+    <ul>
+        <li>   
+            <a  class='nav-link' href="#"><i class="user_sidebar fas fa-user"></i></a>
+            <label style='cursor:pointer;' for="sidebartoggler" class='toggle_up close_sidebar'><i class="fas fa-lg fa-times-circle"></i></label> 
+        </li>
+        <li><input id='side_search-bar' class='search__bar' style='width:80%; ' type="text"> <i class="fas fa-search"></i></li>
+        <li><h3 class='sub-title'>Home</h3> <i class="fas fa-plus"></i></li>
+        <li><h3 class='sub-title'>Catalog</h3> <i class="fas fa-plus"></i></li>
+        <li><h3 class='sub-title'>How To Videos</h3> <i class="fas fa-plus"></i></li>
+        <li><h3 class='sub-title'>Info</h3> <i class="fas fa-plus"></i></li>
+        
+    </ul>
+</div>
+<nav class='navbar-container'>
+    {% include 'navbar' %}
+</nav>
+<nav id='dynamic_nav' class='navbar-container display_none nav_dynamic nav__display_none'>
+    {% include 'navbar' %}
+</nav>
+
+{% schema %} 
+{
+    "name": "Main Menu", 
+    "settings" : [
+        {
+            "type": "link_list", 
+            "id": "main_linklist", 
+            "label": "Menu", 
+            "default": "main-menu"
+        }, 
+        {
+            "type": "image_picker", 
+            "id": "logo", 
+            "label": "Logo"
+        }
+    ]
+}
+{% endschema %} 
+

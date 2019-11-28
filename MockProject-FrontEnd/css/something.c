@@ -1,0 +1,11 @@
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterThree, (double)counterThree / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterFour, (double)counterFour / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterFive, (double)counterFive / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterSix, (double)counterSix / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterSeven, (double)counterSeven / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterEight, (double)counterEight / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterNine, (double)counterNine / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterThree, (double)counterThree / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterThree, (double)counterThree / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterThree, (double)counterThree / (double)totalCount * 100 );
+printf("\nSum = %d; \t Frequency = %d; \t Percentage = %.02lf", 3, counterThree, (double)counterThree / (double)totalCount * 100 );

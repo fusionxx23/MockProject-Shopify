@@ -1,0 +1,145 @@
+.slide-image {
+    top: 0px; 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    z-index: -1; 
+    opacity: 0; 
+    transition: 1000ms; 
+    height: 600px; 
+}
+.img_slide {
+ position: fixed; 
+ width: 100%; 
+ z-index: -1; 
+}
+
+.catalog-hero {
+    height: 400px; 
+    top: 0px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    width: 100%; 
+    transition: 1000ms; 
+}
+.slide-display {
+    opacity: 1; 
+    z-index: 2; 
+}
+.catalog_slide {
+    opacity: 1; 
+}
+.slide-image.full {
+    height: 700px !important;
+    position: relative; 
+}
+.first_container {
+    width: 100%; 
+    height: 800px; 
+}
+/* Hero Text */
+
+.hero-container{
+    position: absolute; 
+    top: 300px;  
+    text-align: center;
+    width: 70%;
+    padding-right: 30%; 
+    color: white; 
+}
+.hero-container h1 {
+    font-size: 2.0rem; 
+    font-weight: 700; 
+}
+.hero-container h3 {
+    margin-top: 20px; 
+    font-size: 1.5rem; 
+    font-weight: 400; 
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(228, 228, 228); 
+}
+.jumbo {
+    bottom: -90%; 
+    height: 365px; 
+    background-color: white; 
+    width: 100%; 
+    position: relative; 
+    text-align: center; 
+    z-index: 10; 
+    font-family: sans-serif; 
+    height: 100%; 
+}
+.quote {
+    position: relative; 
+    top: 25%; 
+    width: 100%; 
+    height: 150px; 
+    color: rgb(255, 255, 255); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif; 
+    text-align: center; 
+}
+.shop-now__button {
+    background-color: black; 
+    color: white; 
+    padding: 9px 20px 9px 20px; 
+    border: none; 
+    margin-top: 20px; 
+    cursor: pointer; 
+    transition: all 200ms; 
+    border-radius: 2px; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem; 
+}
+@media only screen and (max-width: 1500px) {
+    .first_container {
+        height: 600px; 
+    }
+    .shop-now__button {
+        font-size: 1.1rem; 
+        padding: 7px 17px 7px 17px; 
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-container {
+        width: 100%; 
+        padding: none; 
+        top: 138px; 
+    }
+    .hero-container h1 {
+        font-size: 1.3rem; 
+    }
+    .hero-container h3 {
+        font-size: 1.1rem; 
+    }
+    .first_container {
+        height: 400px; 
+    }
+    .shop-now__button {
+        font-size: 1.0rem; 
+        padding: 7px 14px 7px 14px; 
+    }
+}
+@media only screen and (max-width: 900px) {
+    .img_slide {
+        position: relative; 
+        width: 1000px; 
+        left: -150px; 
+        height: auto;
+        margin-right: auto; 
+        margin-left: auto; 
+    }
+    .slide-image {
+        background-attachment: scroll;
+        
+    }
+}

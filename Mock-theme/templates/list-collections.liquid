@@ -1,0 +1,23 @@
+
+{% section 'page-hero' %}
+
+<div class="catalog__container second_container">
+
+        <div class="catalog_nav">
+            <p class='page_define'>Home<span>></span> Shop <span>></span> Page 1 of 1</p>
+        </div>
+        <div class="product-grid">
+                {% for product in collection.products %}
+                <div class='product-item'>
+                    <a href="#">
+                            <img class='product-image' src="{{product.featured_image.src | img_url: '1920x'}}" alt="">
+                            <h1 class='product-title'>{{product.title}}</h1>
+                            <h1 class='product-title'>Special Edition</h1>
+                            <h2 class='price'>{{product.price}} </h2>
+                    </a>
+                </div>
+                {% endfor %}
+        </div>
+</div>
+
+

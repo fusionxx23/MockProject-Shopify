@@ -1,0 +1,67 @@
+/* For Navbar */
+.black-back {
+    background-color: rgba(0, 0, 0, 0.685)!important; 
+    position: relative; 
+}
+
+.product-display {
+    background-color: white; 
+    padding-top: 100px; 
+    padding-bottom: 50px; 
+}
+
+.product-display .flex  {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+
+.display_product-image img{
+    max-width: 345px; 
+
+}
+.display_product-info .product-price {
+    margin-bottom: 25px; 
+    font-family: 'Karla', sans-serif;
+    color: rgb(0, 0, 0); 
+}
+.product-display .flex .flex-col {
+    margin-right: 30px; 
+    margin-left: 30px; 
+
+}
+.display_product-info .product-title {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    font-family: 'Montserrat', sans-serif;
+}
+.display_product-info .product-sizes {
+    font-family: 'Open Sans', sans-serif;
+}
+.size_button {
+    padding: 10px; 
+    border: 1px solid rgb(160, 160, 160);
+    cursor: pointer;  
+}
+ .button_active {
+    border: 1px solid black;
+    color: black;  
+}
+.sizes {
+    margin-top: 19px;
+    margin-bottom: 20px;  
+}
+.add-cart-button {
+    margin-top: 15px; 
+    width: 290px; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 2px; 
+    background-color: rgb(255, 86, 86); 
+    color: white; 
+    cursor: pointer; 
+}
+
+
+/* End of Display Product */

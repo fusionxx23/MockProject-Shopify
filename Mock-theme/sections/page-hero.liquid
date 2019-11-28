@@ -1,0 +1,26 @@
+<section class='page_hero' >
+        <div class="slide-image catalog_slide" id='page-hero' >
+            <div class="page-hero-container">
+                    <h1 style="font-family: 'Josefin Sans', sans-serif;">{{page.title}}</h1>
+             </div>
+         </div>
+ </section>
+<h1>{{title}}</h1>
+<style>
+    #page-hero {
+        background-image: url("{{section.settings.page-hero | img_url: '1920x'}}"); 
+    }
+</style>
+
+{% schema %} 
+    {
+        "name": "Page Hero", 
+        "settings" : [
+            {
+                "type": "image_picker", 
+                "id": "page-hero", 
+                "label": "Page Hero Background"
+            }
+        ]
+    }
+{% endschema %} 

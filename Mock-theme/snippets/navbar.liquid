@@ -1,0 +1,44 @@
+     
+             <!-- Button For Phones Toggler -->
+             <div class="toggle__Container nav_small">
+                <label for="sidebartoggler" class='toggler toggle_up '><i
+                        class=' togglerIcon fas fa-bars'></i></label>
+            </div>
+            <div class="brand">
+                <a href="#"><img src="{{section.settings.logo | img_url: '100x'}}" alt="mrMocksLogo"></a>
+            </div>
+            <div class="cart__Container nav_small">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <!-- Holds Nav Items -->
+            <div class='navbar navbar_list_cont'>
+                <ul class='nav_list left'>
+                    {% for link in linklists[section.settings.main_linklist].links %}
+                        {% if link.links == blank %}
+                            <li class='nav-item'><a class='nav-link' href="{{link.url}}">{{link.title}}</a></li>
+                        {% endif %}
+                        {% if link.links != blank %} 
+                       
+                            <li class='nav-item dropdown'><a class='nav-link' href="{{link.url}}">{{link.title}}</a>
+                                <ul class='dropdown-content'>
+                                    {% for sublink in link.links %}
+                                    <li ><a class='nav-link' href="{{sublink.url}}">{{ sublink.title}}</a></li>
+                                   {% endfor %}
+                                </ul>
+                            </li>
+                       
+                        {% endif %} 
+                    {% endfor %}
+                   
+                </ul>
+            </div>
+            <div class="navbar navbar_list_cont right">
+                <ul class='nav-list right'>
+                    <li class='nav-item'> <a class='nav-link' href="#"><i class="fas fa-user"></i></a> </li>
+                    <input id='search__bar' class='search__bar' type="text">
+                    <li class='nav-item'> <a class='nav-link  search_button' id='search_button' href="#"><i
+                                class="fas fa-search"></i></a> </li>
+                    <li class='nav-item'> <a class='nav-link' href="#"><i
+                                class="fas fa-shopping-cart"></i></a> </li>
+                </ul>
+            </div>

@@ -1,0 +1,70 @@
+        <!-- Another Display Image -->
+    <section id='banner' class='banner' >
+                <div class="slide-image slide-display full" id='slide-image' >
+                      <div class="quote">
+                        <h1>LIFE BEGINS WHERE THE COMFORT ZONE ENDS</h1>
+                    </div>
+                    <div class="news_letter_container news_letter">
+                        <h1>Subscribe to Our News Letter</h1>
+                        <h3>Get 10% off all items!</h3>
+                        <form class='news_letter_form' action="">
+                                 <input type="text">
+                                 <input type="text">
+                                 <button>Sign Up</button>
+                        </form>
+                     </div>
+                    </div>
+                    <div class="featured_products">
+                        <h1 class='feature_title'>Featured Items</h1>
+                        {% assign collection  = collections[section.settings.collection] %}
+                        <div class="feature_flex_container">
+                          {% for product in collection.products limit: section.setting.product_limit %}
+                            <div class="feature_product">
+                                <a href="{{product.url}}" style='text-decoration: none; '>
+                                    <img class='feature_product__img' src="{{product.featured_image.src | img_url: '1920x'}}" alt="Feature Product Image">
+                                    <h1>{{product.title}}</h1>
+                                    <h3>{{product.price | money}}</h3>
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                <!-- Quote Inside -->
+</section>
+<style>
+        #slide-image{
+            background-image: url("{{section.settings.hero-image | img_url: '1920x'}}")
+        }
+</style>
+
+{% schema %} 
+{
+    "name": "Hero Image", 
+    "settings": [
+        {
+            "type": "image_picker", 
+            "id": "hero-image", 
+            "label": "Hero"
+        }, 
+        {
+            "type": "text", 
+            "id" : "title", 
+            "label" : "Heading", 
+            "default" : "Featured Products"
+        }, 
+        {
+            "type": "collection", 
+            "id": "collection", 
+            "label": "Collection" 
+        }, 
+        {
+            "type": "range", 
+            "id": "product_limit", 
+            "label": "Product Limit", 
+            "min": 2, 
+            "max": 4, 
+            "default": 2
+        }
+    ]
+    }
+{% endschema %}

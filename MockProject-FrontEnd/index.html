@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Mr Mocks</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebartoggler" name="" value="">
+    <div class="page-wrapper">
+        <div class="side-bar">
+            <!-- <label for="sidebartoggler" class='toggler'>☴</label> -->
+       
+            <ul>
+                <li>   
+                    <a  class='nav-link' href="#"><i class="user_sidebar fas fa-user"></i></a>
+                    <label style='cursor:pointer;' for="sidebartoggler" class='toggle_up close_sidebar'><i class="fas fa-lg fa-times-circle"></i></label> 
+                </li>
+                <li><input id='side_search-bar' class='search__bar' style='width:80%; ' type="text"> <i class="fas fa-search"></i></li>
+                <li><h3 class='sub-title'>Home</h3> <i class="fas fa-plus"></i></li>
+                <li><h3 class='sub-title'>Catalog</h3> <i class="fas fa-plus"></i></li>
+                <li><h3 class='sub-title'>How To Videos</h3> <i class="fas fa-plus"></i></li>
+                <li><h3 class='sub-title'>Info</h3> <i class="fas fa-plus"></i></li>
+                
+            </ul>
+        </div>
+        <nav class='navbar-container'>
+                <!-- Button For Phones Toggler -->
+                <div class="toggle__Container nav_small">
+                    <label for="sidebartoggler" class='toggler toggle_up '><i
+                            class=' togglerIcon fas fa-bars'></i></label>
+                </div>
+                <div class="brand">
+                    <a href="#"><img src="images/Mr._Mocks_Logo_Circle_PNG_100x.png" alt="mrMocksLogo"></a>
+                </div>
+                <div class="cart__Container nav_small">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <!-- Holds Nav Items -->
+                <div class='navbar navbar_list_cont'>
+                    <ul class='nav_list left'>
+                        <li class='nav-item'><a class='nav-link' href="index.html">Home</a></li>
+                        <li class='nav-item'><a class='nav-link' href="catalog.html">Catalog</a></li>
+                        <li class='nav-item dropdown'><a class='nav-link' href="#">Catalog</a>
+                            <ul class='dropdown-content'>
+                                <li><a href="#" class='nav-link'>Hammocks</a></li>
+                                <li><a href="#" class='nav-link'>Mens</a></li>
+                                <li><a href="#" class='nav-link'>Womens</a></li>
+                            </ul>
+                    </li>
+                        <li class='nav-item'><a class='nav-link' href="#">How to Videos</a></li>
+                    </ul>
+                </div>
+                <div class="navbar navbar_list_cont right">
+                    <ul class='nav-list right'>
+                        <li class='nav-item'> <a class='nav-link' href="#"><i class="fas fa-user"></i></a> </li>
+                        <input id='search__bar' class='search__bar' type="text">
+                        <li class='nav-item'> <a class='nav-link  search_button' id='search_button' href="#"><i
+                                    class="fas fa-search"></i></a> </li>
+                        <li class='nav-item'> <a class='nav-link' href="#"><i
+                                    class="fas fa-shopping-cart"></i></a> </li>
+                    </ul>
+                </div>
+        </nav>
+        <nav id='dynamic_nav' class='navbar-container display_none nav_dynamic nav__display_none'>
+            <!-- Button For Phones Toggler -->
+            <div class="toggle__Container nav_small">
+                    <label for="sidebartoggler" class='toggler  toggle_up'><i class='togglerIcon fas fa-bars'></i></label>
+                </div>
+        
+               <div class="brand">
+                 <a href="#"><img src="images/Mr._Mocks_Logo_Circle_PNG_100x.png" alt="mrMocksLogo"></a>
+                </div>
+                <div class="cart__Container nav_small">
+                        <i class="small_shop_trigger fas fa-shopping-cart"></i>
+                </div>
+             <!-- Holds Nav Items -->
+               <div class='navbar navbar_list_cont'>
+                 <ul class='nav_list left'>
+                     <li class='nav-item'><a class='nav-link' href="index.html">Home</a></li>
+          
+                     <li class='nav-item'><a class='nav-link' href="catalog.html">Catalog</a></li>
+          
+                     <li class='nav-item'><a class='nav-link' href="#">Mocks Info</a></li>
+          
+                     <li class='nav-item'><a class='nav-link' href="#">How to Videos</a></li>
+          
+                 </ul>
+               </div>        
+               
+               <div class="navbar navbar_list_cont right">
+                 <ul class='nav-list right'>
+                     <li class='nav-item'> <a class='nav-link' href="#"><i class="fas fa-user"></i></a> </li>
+                     <input class='search__bar' id='search__bar' type="text"> 
+                     <li class='nav-item'> <i class='nav-link search_button' id='search_button' ><i class="fas fa-search"></i></i> </li>
+                     <li class='nav-item'> <a class='nav-link' href="#"><i class="fas fa-shopping-cart"></i></a> </li>
+                 </ul>
+              </div>    
+        </nav>
+    <div class="main-content">
+     
+   
+    <!-- Main Jumbo Tron  -->
+    <section id='homepage' class='first_container banner'>
+           
+            <div id='img1' class="slide-image slide-display" style='background-color: white; '>
+                <!-- Hero Text -->
+                <img class='img_slide' src="images/hero-img2.jpg" alt="background Image">
+                <div class="hero-container">
+                    <h1 style="font-family: 'Josefin Sans', sans-serif;">A NEW BREED OF HAMMOCKS</h1>
+                    <h3>Lorem Ipsum Dummy Text</h3>
+                    <button class='shop-now__button'>Shop Now</button>
+                </div>
+            </div>
+            <div id='img2' class="slide-image " style='background-color: white; '>
+                <!-- Hero Text -->
+                <img class='img_slide' src="images/hero-img3.jpg" alt="background Image">
+                <div class="hero-container">
+                    <h1 style="font-family: 'Josefin Sans', sans-serif;">A NEW BREED OF HAMMOCKS</h1>
+                    <h3>Lorem Ipsum Dummy Text</h3>
+                    <button class='shop-now__button'>Shop Now</button>
+                </div>
+            </div>
+            <div id='img3' class="slide-image" style='background-color: white; '>
+                <!-- Hero Text -->
+                <img class='img_slide' src="images/hero-img4.jpg" alt="background Image">
+                <div class="hero-container">
+                    <h1 style="font-family: 'Josefin Sans', sans-serif;">A NEW BREED OF HAMMOCKS</h1>
+                    <h3>Lorem Ipsum Dummy Text</h3>
+                    <button class='shop-now__button'>Shop Now</button>
+                </div>
+            </div>
+    </section>
+
+    <div class="second_container jumbo">
+        <div class="contain">
+                <div class="flex-container">
+                        <div class="col-1 left-col">
+                            <i class="fas fa-9x fa-mountain"></i>
+                            
+                            <h1>Flexible</h1>
+                            <div class="underline"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas porro explicabo voluptatibus, 
+                                possimus a quasi, officiis at impedit, illo alias dolore tempora id reprehen</p>
+                            
+                        </div>
+        
+                        <div class="col-1 middle">
+                                <i class="fas fa-9x fa-fist-raised"></i>
+                                <h1>Strong</h1>
+                                <div class="underline"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas porro explicabo voluptatibus, 
+                                        possimus a quasi, officiis at impedit, illo alias dolore tempora id reprehen</p>
+                                
+                                
+                            </div>
+                          <div class="col-1 right-col">
+                                <i class="fab fa-9x fa-vuejs"></i>
+                                <h1>Versitile</h1>
+                                <div class="underline"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas porro explicabo voluptatibus, 
+                                        possimus a quasi, officiis at impedit, illo alias dolore tempora id reprehen</p>
+                        </div>
+                   </div>
+        </div>
+    </div>
+    <!-- Another Display Image -->
+    <section class='banner' >
+        <div class="slide-image slide-display full" style='background-image: url("images/shop-hero.jpg"); '>
+              <div class="quote">
+                <h1>LIFE BEGINS WHERE THE COMFORT ZONE ENDS</h1>
+            </div>
+            <div class="news_letter_container news_letter">
+                <h1>Subscribe to Our News Letter</h1>
+                <h3>Get 10% off all items!</h3>
+                <form class='news_letter_form' action="">
+                         <input type="text">
+                         <input type="text">
+                         <button>Sign Up</button>
+                </form>
+             </div>
+            </div>
+            <div class="featured_products">
+                <h1 class='feature_title'>Featured Items</h1>
+                <div class="feature_flex_container">
+                      
+                    <div class="feature_product">
+                        <img class='feature_product__img' src="images/feature_product1.png" alt="">
+                        <h1>Mr. Mock Hat</h1>
+                        <h3>$19.99</h3>
+                    </div>
+                    <div class="feature_product">
+                        <img class='feature_product__img' src="images/feature_product2.png" alt="">
+                        <h1>Standard Pro Mock</h1>
+                        <h3>$105.99</h3>
+                    </div>
+                </div>
+
+
+            </div>
+        <!-- Quote Inside -->
+    </section>
+
+    <!-- Jumbotron With  -->
+    <section class='banner'>
+        <div class="slide-image slide-display full" style='background-image: url("images/hero-img3.jpg");'>
+        </div>
+    </section>
+
+    <section class='bottom_container'> 
+        <div class="bottom-flex">
+    
+            <div class='bottom_p'><p class='bottom_paragraph
+                '>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                 Ducimus dignissimos officia illo! Inventore perferendis nihil
+                  repudiandae qui velit ab, modi alias natus, 
+                  illum sunt animi atque dignissimos aut id. Lorem ipsum dolor sit
+                   amet consectetur adipisicing elit. Eum animi reiciendis quia eos ea
+                    ex odio rem illo labore, corporis dignissimos error reprehenderit.
+                  Itaque magnam vel iusto, numquam laudantium dicta?  </p>
+                 <button class="our_story">OUR STORY</button>
+            </div>
+            <div class="img"><img src="images/giphy.gif" alt=""></div>
+            
+        </div>
+    </section>
+<!-- Footer -->
+<footer>
+    <div class="container top-footer">
+        <div class="flex">
+            <!-- Column Item -->
+            <div class="col">
+                <h1>MENU</h1>
+                <ul>
+                    <li><a class='active' href="#">HOME</a></li>
+                    <li><a href="#">CATALOG</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">VIDEOS</a></li>
+                </ul>
+            </div>
+            <!-- Column Item -->
+            <div class="col middle">
+                <h1 class='follow'>
+                    FOLLOW
+                </h1>
+                <div class="icon-social">
+                   <a href="#">
+                        <i class="fab fa-2x fa-instagram"></i>
+                   </a> 
+                </div>
+                <div class="icon-social">
+                    <a  href="#"> <i class="fab fa-2x fa-facebook-square"></i> </a> 
+                </div>
+                <div class="icon-social">
+                    <a href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+                </div>
+                <p>Follow us we'll follow you back. </p>
+            </div>
+            <!-- Column Item -->
+            <div class="form col">
+                <div class="sub-titles">
+                        <span ><a class='Sub_title' href="#">SHOP</a></span>
+                        <span ><a class='Sub_title' href="#">CONTACT US</a></span>
+                </div>
+               
+                <form action="">
+                 <p>Sign up to get the latest on sales, new releases and more…</p>
+                  <input type="text">
+                  <input id='submit' type="submit">
+                </form>
+            </div>
+        </div>
+      
+      </div>
+  </footer>
+  </div>
+</div>
+    <script src="https://kit.fontawesome.com/983cc59112.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src='js/navbar.js'></script>
+    <script src="js/carousel.js"></script>
+    
+</body>
+</html>

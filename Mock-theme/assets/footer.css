@@ -1,0 +1,176 @@
+footer {
+    background-color: #1B2023; 
+    font-family: sans-serif;  
+    margin-bottom: 0; 
+    position: relative; 
+    z-index: 2; 
+}
+footer h1{
+    color: rgb(241, 241, 241); 
+    margin-bottom: 10px; 
+    font-size: 1.0rem; 
+    
+}
+footer ul {
+    list-style: none; 
+    
+}
+footer li {
+    margin-bottom: 5px; 
+
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(175, 175, 175); 
+    font-size: 0.7rem; 
+}
+footer a:hover {
+    color: white; 
+}
+footer .top-footer {
+    padding-top:30px; 
+}
+footer .bottom-footer {
+    padding-top: 10px; 
+    padding-bottom: 5px; 
+}
+footer .container {
+    padding-right: 20%; 
+    padding-left: 20%; 
+    padding-bottom: 3%; 
+    padding-top: 3%; 
+}
+.active {
+    color: white!important; 
+}
+footer .flex {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+.bottom {
+    border-top: 1px solid rgb(160, 160, 160); 
+    margin-top: 40px; 
+    background-color: #1B2023; 
+}
+.icon-social {
+    display: inline-block;      
+    margin-left: 8px; 
+    margin-right: 8px; 
+}
+.follow {margin-right: 8px; margin-left: 8px;}
+/* SOCIAL ICONS */
+.icon-social a {
+    color: rgb(175, 175, 175)!important;
+}
+.icon-social a:hover {
+    color: white!important; 
+}
+footer .col {
+    padding: auto; 
+}
+.col p {
+    color: rgb(175, 175, 175); 
+    margin-top: 15px; 
+}
+
+
+/* Sign Up FORM */
+
+form p {
+    font-size: 0.8rem; 
+    margin-bottom: 15px; 
+    color: 
+}
+.form {
+    color: white; 
+}
+footer form input[type=text] {
+    width: 300px; 
+    height: 40px; 
+    border-radius: 2px;
+    border: none;  
+    margin-bottom: 8px; 
+}
+footer form input[type=submit] {
+border-radius: 2px; 
+border: none; 
+height: 40px; 
+margin-left: 5px; 
+padding: 0px 20px 0px 20px;
+align-content: center; 
+background-color: rgb(255, 113, 113); 
+cursor: pointer; 
+font-size: 0.9rem; 
+color: white; 
+}
+footer form input[type=submit]:hover {
+    background-color: rgb(204, 68, 68); 
+}
+
+footer form button:hover {
+    background-color: rgb(53, 50, 50); 
+}
+.sub-titles {
+    display: flex; 
+    margin-bottom: 20px; 
+    justify-content: start; 
+    padding-right: 18%; 
+    font-size: 1.1rem; 
+    text-align: left; 
+}
+.Sub_title {
+    font-size: 1.0rem; 
+    margin-right: 10px; 
+}
+
+@media only screen and (max-width: 1250px) {
+    footer .container {
+        padding-right: 8%; 
+        padding-left: 8%; 
+    }
+}
+@media only screen and (max-width: 900px) {
+    footer form input[type=text] {
+        width: 200px; 
+        height: 40px; 
+        border-radius: 2px;
+        border: none;  
+        margin-bottom: 8px; 
+    }
+    footer{
+        text-align: center; 
+    }
+    .sub-titles {text-align: center; justify-content: center; }
+    footer .top-footer {
+        padding-top:20px; 
+    }
+    footer .flex {
+        justify-content: space-between;
+        align-items: center; 
+    }
+    footer .col {
+        margin-right: auto;
+        margin-left: auto; 
+    }
+    .form {
+        margin-top: 20px; 
+    }   
+    .sub-titles {
+        padding-right: 0%; 
+    }
+    .col.middle {
+        border-top: 1px solid white; 
+        padding-top: 20px;
+        padding-bottom: 20px;  
+        border-bottom: 1px solid white; 
+    }
+    .col {
+        width: 100%; 
+        margin-top: 6px;
+        margin-bottom: 6px; 
+    }
+   .form {
+       padding-top: 5px; 
+   }
+  }

@@ -1,0 +1,53 @@
+
+<section id='homepage' class='first_container banner'>      
+                <div id='img1' class="slide-image slide-display" style='background-color: white; '>
+                    <!-- Hero Text -->
+                    <img class='img_slide' src="{{section.settings.slide-1 | img_url: '1920x'}}" alt="background Image">
+                    <div class="hero-container">
+                        <h1 style="font-family: 'Josefin Sans', sans-serif;">A NEW BREED OF HAMMOCKS</h1>
+                        <h3>Lorem Ipsum Dummy Text</h3>
+                        <button class='shop-now__button'>Shop Now</button>
+                    </div>
+                </div>
+                <div id='img2' class="slide-image " style='background-color: white; '>
+                    <!-- Hero Text -->
+                    <img class='img_slide' src="{{section.settings.slide-2 | img_url: '1920x'}}" alt="background Image">
+                    <div class="hero-container">
+                        <h1 style="font-family: 'Josefin Sans', sans-serif;">A NEW BREED OF HAMMOCKS</h1>
+                        <h3>Lorem Ipsum Dummy Text</h3>
+                        <button class='shop-now__button'>Shop Now</button>
+                    </div>
+                </div>
+                <div id='img3' class="slide-image" style='background-color: white; '>
+                    <!-- Hero Text -->
+                    <img class='img_slide' src="{{section.settings.slide-3 | img_url: '1920x'}}" alt="background Image">
+                    <div class="hero-container">
+                        <h1 style="font-family: 'Josefin Sans', sans-serif;">A NEW BREED OF HAMMOCKS</h1>
+                        <h3>Lorem Ipsum Dummy Text</h3>
+                        <button class='shop-now__button'>Shop Now</button>
+                    </div>
+                </div>
+</section>
+
+{% schema %}
+{
+    "name": "Homepage Slider", 
+    "settings": [
+        {
+            "type": "image_picker", 
+            "id": "slide-1", 
+            "label": "Slide 1"
+        },
+        {
+            "type": "image_picker", 
+            "id": "slide-2", 
+            "label": "Slide 2"
+        },
+        {
+            "type": "image_picker", 
+            "id": "slide-3", 
+            "label": "Slide 3"
+        }
+    ]
+}
+{% endschema %}

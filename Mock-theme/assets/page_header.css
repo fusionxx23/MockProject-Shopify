@@ -1,0 +1,11 @@
+.page_hero {
+    height: 400px; 
+}
+.page-hero-container{
+    position: absolute; 
+    top: 210px;  
+    text-align: center;
+    width: 100%;
+    color: white; 
+    height: 45vh; 
+}
